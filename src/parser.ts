@@ -1212,21 +1212,6 @@ function getTextValueOfFunctionProperty(
       const expr = (statement as ts.ExpressionStatement)
         .expression as ts.BinaryExpression;
 
-      const locals = Array.from(
-        (source as any).locals as [string, ts.Symbol][]
-      );
-      const hasOneLocalExport =
-        locals.filter(local => !!local[1].exports).length === 1;
-
-      if (hasOneLocalExport) {
-        return (
-          expr.left &&
-          (expr.left as ts.PropertyAccessExpression).name &&
-          (expr.left as ts.PropertyAccessExpression).name.escapedText ===
-            propertyName
-        );
-      }
-
       /**
        * Ensure the .displayName is for the currently processing function.
        *
