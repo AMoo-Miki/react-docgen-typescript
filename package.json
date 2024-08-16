@@ -1,9 +1,8 @@
 {
-  "name": "react-docgen-typescript",
+  "name": "@amoo_miki/react-docgen-typescript",
   "version": "2.3.0",
   "description": "",
-  "homepage": "https://github.com/styleguidist/react-docgen-typescript/",
-  "bugs": "https://github.com/styleguidist/react-docgen-typescript/issues",
+  "homepage": "https://github.com/AMoo-Miki/react-docgen-typescript/",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
